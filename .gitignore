@@ -1,3 +1,5 @@
 /train_data
 /venv
 /bad
+mlp.pth
+model.pth
