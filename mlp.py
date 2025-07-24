@@ -121,8 +121,8 @@ def main(seed):
         loss_val = loss/len(train_loader)
         acc_val = acc/total
         print(f'Epoch {epoch+1}, Loss: {loss_val}, Accuracy: {acc_val}')
-        losses.append(loss_val)
-        accuracies.append(acc_val)
+        losses.append(float(loss_val))
+        accuracies.append(float(acc_val))
 
         
     #save MLP
@@ -131,6 +131,7 @@ def main(seed):
     #test MLP
     test(mlp, train_loader)
     test(mlp, test_loader)
+    plot_results(losses, accuracies)
 
 def test(model, test_loader):
     model.eval()
@@ -147,7 +148,7 @@ def test(model, test_loader):
     print(f'Accuracy: {correct/total}')
     print(f'Correct: {correct}, Total: {total}')
 
-
+#plots training results
 def plot_results(losses, accuracies):
     plt.plot(losses, label='Loss')
     plt.plot(accuracies, label='Accuracy')
