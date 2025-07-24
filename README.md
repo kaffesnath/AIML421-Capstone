@@ -8,7 +8,7 @@ This project was developed during the 4th Year of my University Honours Degree.
 
 This project encompassed the knowledge learned during the AIML421 course, focused on Data Preparation and Machine Learning.
 
-This specific Convolutional Neural Network was trained to idenfity the differences between Cherries, Apples and Strawberries.
+This specific Convolutional Neural Network was trained to idenfity the differences between Cherries, Tomatoes and Strawberries.
 
 This project was developed in the Python programming language. The notable tools used were; *PyTorch* and *TensorFlow*.
 
